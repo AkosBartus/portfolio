@@ -6,13 +6,14 @@ import { StoryComponent } from "./story/story.component";
 import { QuoteComponent } from "./quote/quote.component";
 import { WorkflowComponent } from "./workflow/workflow.component";
 import { ProjectsComponent } from "./projects/projects.component";
+import { SkillsComponent } from "./skills/skills.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [RouterOutlet, NavbarComponent, HomeComponent, StoryComponent, QuoteComponent, WorkflowComponent, ProjectsComponent]
+    imports: [RouterOutlet, NavbarComponent, HomeComponent, StoryComponent, QuoteComponent, WorkflowComponent, ProjectsComponent, SkillsComponent]
 })
 export class AppComponent {
   title = 'portfolio';
