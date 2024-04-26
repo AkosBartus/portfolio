@@ -1,0 +1,41 @@
+.sub-pic {
+  width: clamp(400px, 30vw, 800px);
+}
+
+.quotation {
+  font-size: clamp(1.5rem, 1.3786rem + 0.5178vw, 2rem);
+}
+
+.parent {
+    padding-top: clamp(1rem, 5vw, 4rem);
+    padding-bottom: clamp(1rem, 5vw, 4rem);
+}
+
+.left-side {
+    padding-left: clamp(.75rem, 3vw, 2.5rem);
+    padding-right: clamp(.75rem, 3vw, 2.5rem);
+}
+
+@media screen and (max-width: 1440px) {
+    .parent {
+        flex-wrap: wrap;
+    }
+
+    .left-side {
+        width: auto;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-side {
+        width: auto;
+        margin: 2rem 0 0 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
