@@ -7,13 +7,15 @@ import { QuoteComponent } from "./quote/quote.component";
 import { WorkflowComponent } from "./workflow/workflow.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { SkillsComponent } from "./skills/skills.component";
+import { ContactComponent } from "./contact/contact.component";
+import { FooterComponent } from "./footer/footer.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [RouterOutlet, NavbarComponent, HomeComponent, StoryComponent, QuoteComponent, WorkflowComponent, ProjectsComponent, SkillsComponent]
+    imports: [RouterOutlet, NavbarComponent, HomeComponent, StoryComponent, QuoteComponent, WorkflowComponent, ProjectsComponent, SkillsComponent, ContactComponent, FooterComponent]
 })
 export class AppComponent {
   title = 'portfolio';
