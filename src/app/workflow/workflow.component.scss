@@ -1,0 +1,40 @@
+$text-color: #dca54c;
+
+body {
+    padding: calc(5vw - 1rem);
+    color: $text-color;
+}
+
+p {
+    font-size: clamp(1rem, 0.8786rem + 0.5178vw, 1.5rem);
+}
+
+li {
+    font-size: clamp(1rem, 0.8786rem + 0.5178vw, 1.5rem);
+}
+
+ol {
+    list-style: upper-roman;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: calc(2rem - .75em);
+}
+
+li::marker {
+    color: gray;
+}
+
+@media screen and (max-width: 555px) {
+    section {
+        flex-wrap: wrap;
+    }
+
+    .workflow-right {
+        display: none;
+    }
+
+    .small-screen {
+        display: block;
+        padding: calc(7vw - .5rem);
+    }
+}
